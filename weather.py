@@ -67,6 +67,37 @@ def info():
     zona_horas = datetime.now(zona)
     zona_horas = zona_horas.strftime("%d %m %Y | %H:%M:%S %p")
 
+     # --- 
+    tempo= data["main"]["temp"]
+    pressao = data["main"]["pressure"]
+    umidade = data["main"]["humidity"]
+    velocidade = data["wind"]["speed"]
+    descrcao = data["weather"][0]["description"]
+
+
+    # Mudando informaoes
+    def country_to_continent(country_name):
+        country_alpha2 = pc.country_name_to_country_alpha2(country_name)
+        country_continent_code = pc.country_alpha2_to_continent_code(country_alpha2)
+        country_continent_name = pc.convert_continent_code_to_continent_name(country_continent_code)
+        return country_continent_name
+
+    continente= country_to_continent(pais)
+
+    l_cidade['text'] = cidade + " - " + pais +" / "+ continente
+
+    l_data['text'] = zona_horas
+
+    l_pressao['text'] = "Pressão : "+ str(pressao)
+
+    l_umidade['text'] = umidade
+    l_umidade_simbol['text'] = "%"
+    l_umidade_nome['text'] = "Humidade"
+
+    l_velocidade['text'] = "velocidade do vento : "+ str(velocidade)
+
+    l_descricao['text'] = descrcao
+
 app=QtWidgets.QApplication([])
 main=uic.loadUi("main.ui")
 #main.pushButton.clicked.connect(funcao_principal)
