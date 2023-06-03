@@ -72,7 +72,7 @@ def info():
     pressao = data["main"]["pressure"]
     umidade = data["main"]["humidity"]
     velocidade = data["wind"]["speed"]
-    descrcao = data["weather"][0]["description"]
+    descricao = data["weather"][0]["description"]
 
 
     # Mudando informaoes
@@ -96,7 +96,13 @@ def info():
 
     l_velocidade['text'] = "velocidade do vento : "+ str(velocidade)
 
-    l_descricao['text'] = descrcao
+    l_descricao['text'] = descricao
+
+
+    # apresentado sol e lua
+
+    zona_periodo = datetime.now(zona)
+    zona_periodo = zona_periodo.strftime("%H")
 
 app=QtWidgets.QApplication([])
 main=uic.loadUi("main.ui")
