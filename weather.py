@@ -104,6 +104,32 @@ def info():
     zona_periodo = datetime.now(zona)
     zona_periodo = zona_periodo.strftime("%H")
 
+
+    global imagem
+
+    zona_periodo = int(zona_periodo)
+    if zona_periodo <= 5:
+        imagem = Image.open('images/lua.png')
+        fundo = fundo_noite
+    elif zona_periodo <= 11:
+        imagem = Image.open('images/sol_dia.png')
+        fundo = fundo_dia
+    elif zona_periodo <= 17:
+        imagem = Image.open('images/sol_tarde.png')
+        fundo = fundo_tarde
+    elif zona_periodo <= 23:
+        imagem = Image.open('images/lua.png')
+        fundo= fundo_noite
+    else: 
+        pass  
+
+
+    imagem = imagem.resize((130, 130), Image.ANTIALIAS)
+    imagem = ImageTk.PhotoImage(imagem)
+    l_icon1 = Label(frame_quadros,image=imagem, compound=LEFT,  bg=fundo, fg="white",font=('Ivy 10 bold'), anchor="nw", relief=FLAT)
+    l_icon1.place(x=160, y=50)
+
+
 app=QtWidgets.QApplication([])
 main=uic.loadUi("main.ui")
 #main.pushButton.clicked.connect(funcao_principal)
