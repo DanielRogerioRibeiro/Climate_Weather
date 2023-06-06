@@ -129,6 +129,12 @@ def info():
     l_icon1 = Label(frame_quadros,image=imagem, compound=LEFT,  bg=fundo, fg="white",font=('Ivy 10 bold'), anchor="nw", relief=FLAT)
     l_icon1.place(x=160, y=50)
 
+# -- Mudando cor do fundo
+
+    janela.configure(bg=fundo)
+    frame_quadros.configure(bg=fundo)
+    frame_principal.configure(bg=fundo)
+
 
 app=QtWidgets.QApplication([])
 main=uic.loadUi("main.ui")
