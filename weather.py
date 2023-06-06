@@ -136,6 +136,17 @@ def info():
     frame_principal.configure(bg=fundo)
 
 
+    l_cidade['bg']         = fundo
+    l_data['bg']           = fundo
+    l_pressao['bg']        = fundo
+    l_umidade['bg']        = fundo
+    l_umidade_simbol['bg'] = fundo
+    l_umidade_nome['bg']   = fundo
+    l_velocidade['bg']     = fundo
+    l_descricao['bg']      = fundo
+
+
+
 app=QtWidgets.QApplication([])
 main=uic.loadUi("main.ui")
 #main.pushButton.clicked.connect(funcao_principal)
