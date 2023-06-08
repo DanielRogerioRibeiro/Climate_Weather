@@ -146,6 +146,9 @@ def info():
     l_descricao['bg']      = fundo
 
 
+e_local= Entry(frame_principal,width=20, justify='left',font=("",14),highlightthickness=1,relief="solid")
+e_local.place(x=15, y=10)
+
 
 app=QtWidgets.QApplication([])
 main=uic.loadUi("main.ui")
