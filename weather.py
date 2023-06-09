@@ -149,6 +149,9 @@ def info():
 e_local= Entry(frame_principal,width=20, justify='left',font=("",14),highlightthickness=1,relief="solid")
 e_local.place(x=15, y=10)
 
+b_ver = Button(frame_principal,command=info, text="Ver clima", height=1, bg=co1, fg=co2,font=('Ivy 9 bold'), relief=RAISED, overrelief=RIDGE)
+b_ver.place(x=250, y=10)
+
 
 app=QtWidgets.QApplication([])
 main=uic.loadUi("main.ui")
