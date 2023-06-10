@@ -152,6 +152,9 @@ e_local.place(x=15, y=10)
 b_ver = Button(frame_principal,command=info, text="Ver clima", height=1, bg=co1, fg=co2,font=('Ivy 9 bold'), relief=RAISED, overrelief=RIDGE)
 b_ver.place(x=250, y=10)
 
+l_cidade = Label(frame_quadros, text="", height=1, padx=0, relief="flat", anchor="center", font=('Arial 14 '), bg=fundo, fg=co1)
+l_cidade.place(x=10, y=4)
+
 
 app=QtWidgets.QApplication([])
 main=uic.loadUi("main.ui")
