@@ -155,6 +155,9 @@ b_ver.place(x=250, y=10)
 l_cidade = Label(frame_quadros, text="", height=1, padx=0, relief="flat", anchor="center", font=('Arial 14 '), bg=fundo, fg=co1)
 l_cidade.place(x=10, y=4)
 
+l_data = Label(frame_corpo, text="10 06 2023 | 23:30:00 AM", anchor="center", font=('Arial 14 '), bg=fundo, fg=co1)
+l_data.place(x=10, y=54)
+
 
 app=QtWidgets.QApplication([])
 main=uic.loadUi("main.ui")
