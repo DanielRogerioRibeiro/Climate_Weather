@@ -164,6 +164,9 @@ l_umidade.place(x=10, y=100)
 l_umidade_simbol = Label(frame_quadros, text="", height=1, padx=0, relief="flat", anchor="center", font=('Arial 10 bold '), bg=fundo, fg=co1)
 l_umidade_simbol.place(x=85, y=110)
 
+l_umidade_nome = Label(frame_quadros, text="", height=1, padx=0, relief="flat", anchor="center", font=('Arial 8 '), bg=fundo, fg=co1)
+l_umidade_nome.place(x=85, y=140)
+
 
 app=QtWidgets.QApplication([])
 main=uic.loadUi("main.ui")
