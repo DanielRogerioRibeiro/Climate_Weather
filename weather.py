@@ -170,6 +170,9 @@ l_umidade_nome.place(x=85, y=140)
 l_pressao = Label(frame_quadros, text="", height=1, padx=0, relief="flat", anchor="center", font=('Arial 10 '), bg=fundo, fg=co1)
 l_pressao.place(x=10, y=184)
 
+l_velocidade = Label(frame_quadros, text="", height=1, padx=0, relief="flat", anchor="center", font=('Arial 10 '), bg=fundo, fg=co1)
+l_velocidade.place(x=10, y=212)
+
 app=QtWidgets.QApplication([])
 main=uic.loadUi("main.ui")
 #main.pushButton.clicked.connect(funcao_principal)
