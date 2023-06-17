@@ -1,6 +1,10 @@
 #Esse é um o Programa de Consulta da Previsão do tempo.
 
 from PyQt5 import  uic,QtWidgets
+import tkinter
+from tkinter import *
+from tkinter import ttk
+
 
 # importando bilbiotecas
 from PIL import ImageTk, Image
@@ -9,8 +13,8 @@ import datetime
 import time
 
 from datetime import datetime
-import pytz
-import pycountry_convert as pc
+#import pytz
+#import pycountry_convert as pc
 
 
 ##### sobre dados ##
@@ -177,10 +181,14 @@ l_descricao = Label(frame_quadros, text="", height=1, padx=0, relief="flat", anc
 l_descricao.place(x=170, y=190)
 
 
-app=QtWidgets.QApplication([])
-main=uic.loadUi("main.ui")
+#app=QtWidgets.QApplication([])
+#main=uic.loadUi("main.ui")
 #main.pushButton.clicked.connect(funcao_principal)
 #formulario.pushButton_2.clicked.connect(chama_segunda_tela)
 
-main.show()
-app.exec()
+
+
+#main.show()
+##app.exec()
+
+janela.mainloop()
