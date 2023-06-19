@@ -1,10 +1,8 @@
 #Esse é um o Programa de Consulta da Previsão do tempo.
 
-from PyQt5 import  uic,QtWidgets
 import tkinter
 from tkinter import *
 from tkinter import ttk
-
 
 # importando bilbiotecas
 from PIL import ImageTk, Image
@@ -13,8 +11,8 @@ import datetime
 import time
 
 from datetime import datetime
-#import pytz
-#import pycountry_convert as pc
+import pytz
+import pycountry_convert as pc
 
 
 ##### sobre dados ##
@@ -32,6 +30,11 @@ fundo_tarde = "#bfb86d"
 
 fundo = fundo_dia
 
+################# Janela ####################
+janela = Tk()
+janela.title('')
+janela.geometry('320x350')
+janela.configure(bg=fundo)
 
 ################# Frames ####################
 
@@ -71,7 +74,7 @@ def info():
     zona_horas = datetime.now(zona)
     zona_horas = zona_horas.strftime("%d %m %Y | %H:%M:%S %p")
 
-     # --- 
+    # --- 
     tempo= data["main"]["temp"]
     pressao = data["main"]["pressure"]
     umidade = data["main"]["humidity"]
@@ -180,15 +183,5 @@ l_velocidade.place(x=10, y=212)
 l_descricao = Label(frame_quadros, text="", height=1, padx=0, relief="flat", anchor="center", font=('Arial 10 '), bg=fundo, fg=co1)
 l_descricao.place(x=170, y=190)
 
-
-#app=QtWidgets.QApplication([])
-#main=uic.loadUi("main.ui")
-#main.pushButton.clicked.connect(funcao_principal)
-#formulario.pushButton_2.clicked.connect(chama_segunda_tela)
-
-
-
-#main.show()
-##app.exec()
 
 janela.mainloop()
