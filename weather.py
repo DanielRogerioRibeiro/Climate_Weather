@@ -52,9 +52,9 @@ style.theme_use("clam")
 
 
 def info():
-    #weather_key = '74db8d03761c1e007553ccbc6d73fe92'
-    #cidade = e_local.get()
-    #api_link = "https://api.openweathermap.org/data/2.5/weather?q="+cidade+"&appid="+ weather_key+"&lang=pt"
+    weather_key = 'c68a489eac0d7c85d0d72141a18c121c'
+    cidade = e_local.get()
+    api_link = "https://api.openweathermap.org/data/2.5/weather?q="+cidade+"&appid="+ weather_key+"&lang=pt"
 
     #HTTP request
     r=requests.get(api_link)
