@@ -116,16 +116,16 @@ def info():
 
     zona_periodo = int(zona_periodo)
     if zona_periodo <= 5:
-        imagem = Image.open('images/lua.png')
+        imagem = Image.open('imagens/lua.png')
         fundo = fundo_noite
     elif zona_periodo <= 11:
-        imagem = Image.open('images/sol_dia.png')
+        imagem = Image.open('imagens/sol_dia.png')
         fundo = fundo_dia
     elif zona_periodo <= 17:
-        imagem = Image.open('images/sol_tarde.png')
+        imagem = Image.open('imagens/sol_tarde.png')
         fundo = fundo_tarde
     elif zona_periodo <= 23:
-        imagem = Image.open('images/lua.png')
+        imagem = Image.open('imagens/lua.png')
         fundo= fundo_noite
     else: 
         pass  
