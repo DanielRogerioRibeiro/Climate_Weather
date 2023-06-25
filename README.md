@@ -10,6 +10,6 @@ The API consults the weather forecast based on the information available on the 
 
 <h2>Instructions 📖</h2>
 
-
+After executing the program, the user must fill in the name of the City in which he wants to know the Weather information.
 
 Thanks for visiting 💡
