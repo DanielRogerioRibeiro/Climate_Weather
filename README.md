@@ -16,14 +16,21 @@ Mode of Use:
 
 1 - The user must type the "Name" of the City or Country he wants to verify
 the weather.
+
 2 - After inserting the "City" or "Country" you must click on "View Weather" in the button on the right.
+
 3 - After clicking on "View Weather", the following information will be displayed:
 
 City - Country / Region
+
 Date | Hour
+
 Air Humidity
+
 Atmospheric pressure
+
 Wind speed
+
 Sky Information (Clear, Cloudy, Rainy)
 
 Thanks for visiting 💡
